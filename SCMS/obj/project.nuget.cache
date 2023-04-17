@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mfKj/P2fFc6fPxvKwrLUW1QUtimQLVVeXmUCmaXtIlqkWkGGQO0h5Fs7oLaoSicgmhosE1EwFhK6TS69fM5iMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jay Ben Redondo\\OneDrive\\Documents\\EDP Project\\SCMS\\SCMS\\SCMS.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jay Ben Redondo\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\Jay Ben Redondo\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
