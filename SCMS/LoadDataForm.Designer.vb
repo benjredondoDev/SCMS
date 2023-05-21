@@ -28,6 +28,9 @@ Partial Class LoadDataForm
         Me.btnBrowse = New System.Windows.Forms.Button()
         Me.cboSheet = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.printdataBtn = New System.Windows.Forms.Button()
+        Me.LoadDataBtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,11 +87,41 @@ Partial Class LoadDataForm
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Sheet"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(535, 486)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(155, 29)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Backup Database"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'printdataBtn
+        '
+        Me.printdataBtn.Location = New System.Drawing.Point(707, 486)
+        Me.printdataBtn.Name = "printdataBtn"
+        Me.printdataBtn.Size = New System.Drawing.Size(155, 29)
+        Me.printdataBtn.TabIndex = 5
+        Me.printdataBtn.Text = "Print Data"
+        Me.printdataBtn.UseVisualStyleBackColor = True
+        '
+        'LoadDataBtn
+        '
+        Me.LoadDataBtn.Location = New System.Drawing.Point(361, 486)
+        Me.LoadDataBtn.Name = "LoadDataBtn"
+        Me.LoadDataBtn.Size = New System.Drawing.Size(155, 29)
+        Me.LoadDataBtn.TabIndex = 5
+        Me.LoadDataBtn.Text = "Load Database"
+        Me.LoadDataBtn.UseVisualStyleBackColor = True
+        '
         'LoadDataForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(874, 527)
+        Me.Controls.Add(Me.printdataBtn)
+        Me.Controls.Add(Me.LoadDataBtn)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cboSheet)
         Me.Controls.Add(Me.btnBrowse)
         Me.Controls.Add(Me.txtFileName)
@@ -109,4 +142,7 @@ Partial Class LoadDataForm
     Friend WithEvents btnBrowse As Button
     Friend WithEvents cboSheet As ComboBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents printdataBtn As Button
+    Friend WithEvents LoadDataBtn As Button
 End Class

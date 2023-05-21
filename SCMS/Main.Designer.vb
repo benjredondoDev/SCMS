@@ -27,17 +27,15 @@ Partial Class Main
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.addBtn = New System.Windows.Forms.Button()
-        Me.removeBtn = New System.Windows.Forms.Button()
-        Me.updateBtn = New System.Windows.Forms.Button()
-        Me.viewBtn = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.AddBtn = New System.Windows.Forms.Button()
+        Me.RemoveBtn = New System.Windows.Forms.Button()
+        Me.UpdateBtn = New System.Windows.Forms.Button()
+        Me.ViewBtn = New System.Windows.Forms.Button()
+        Me.LogoutBtn = New System.Windows.Forms.Button()
+        Me.ShowEventBtn = New System.Windows.Forms.Button()
+        Me.ShowClubBtn = New System.Windows.Forms.Button()
+        Me.LoadDataBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -81,149 +79,140 @@ Partial Class Main
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "MANAGE STUDENTS"
         '
-        'addBtn
+        'AddBtn
         '
-        Me.addBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.addBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.addBtn.FlatAppearance.BorderSize = 10
-        Me.addBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.addBtn.ForeColor = System.Drawing.Color.White
-        Me.addBtn.Location = New System.Drawing.Point(105, 180)
-        Me.addBtn.Name = "addBtn"
-        Me.addBtn.Size = New System.Drawing.Size(157, 46)
-        Me.addBtn.TabIndex = 5
-        Me.addBtn.Text = "Add"
-        Me.addBtn.UseVisualStyleBackColor = False
+        Me.AddBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.AddBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.AddBtn.FlatAppearance.BorderSize = 10
+        Me.AddBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.AddBtn.ForeColor = System.Drawing.Color.White
+        Me.AddBtn.Location = New System.Drawing.Point(105, 180)
+        Me.AddBtn.Name = "AddBtn"
+        Me.AddBtn.Size = New System.Drawing.Size(157, 46)
+        Me.AddBtn.TabIndex = 5
+        Me.AddBtn.Text = "Add"
+        Me.AddBtn.UseVisualStyleBackColor = False
         '
-        'removeBtn
+        'RemoveBtn
         '
-        Me.removeBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.removeBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.removeBtn.FlatAppearance.BorderSize = 10
-        Me.removeBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.removeBtn.ForeColor = System.Drawing.Color.White
-        Me.removeBtn.Location = New System.Drawing.Point(105, 232)
-        Me.removeBtn.Name = "removeBtn"
-        Me.removeBtn.Size = New System.Drawing.Size(157, 46)
-        Me.removeBtn.TabIndex = 5
-        Me.removeBtn.Text = "Remove"
-        Me.removeBtn.UseVisualStyleBackColor = False
+        Me.RemoveBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.RemoveBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.RemoveBtn.FlatAppearance.BorderSize = 10
+        Me.RemoveBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RemoveBtn.ForeColor = System.Drawing.Color.White
+        Me.RemoveBtn.Location = New System.Drawing.Point(105, 232)
+        Me.RemoveBtn.Name = "RemoveBtn"
+        Me.RemoveBtn.Size = New System.Drawing.Size(157, 46)
+        Me.RemoveBtn.TabIndex = 5
+        Me.RemoveBtn.Text = "Remove"
+        Me.RemoveBtn.UseVisualStyleBackColor = False
         '
-        'updateBtn
+        'UpdateBtn
         '
-        Me.updateBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.updateBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.updateBtn.FlatAppearance.BorderSize = 10
-        Me.updateBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.updateBtn.ForeColor = System.Drawing.Color.White
-        Me.updateBtn.Location = New System.Drawing.Point(290, 180)
-        Me.updateBtn.Name = "updateBtn"
-        Me.updateBtn.Size = New System.Drawing.Size(157, 46)
-        Me.updateBtn.TabIndex = 5
-        Me.updateBtn.Text = "Update"
-        Me.updateBtn.UseVisualStyleBackColor = False
+        Me.UpdateBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.UpdateBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.UpdateBtn.FlatAppearance.BorderSize = 10
+        Me.UpdateBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.UpdateBtn.ForeColor = System.Drawing.Color.White
+        Me.UpdateBtn.Location = New System.Drawing.Point(290, 180)
+        Me.UpdateBtn.Name = "UpdateBtn"
+        Me.UpdateBtn.Size = New System.Drawing.Size(157, 46)
+        Me.UpdateBtn.TabIndex = 5
+        Me.UpdateBtn.Text = "Update"
+        Me.UpdateBtn.UseVisualStyleBackColor = False
         '
-        'viewBtn
+        'ViewBtn
         '
-        Me.viewBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.viewBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.viewBtn.FlatAppearance.BorderSize = 10
-        Me.viewBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.viewBtn.ForeColor = System.Drawing.Color.White
-        Me.viewBtn.Location = New System.Drawing.Point(290, 232)
-        Me.viewBtn.Name = "viewBtn"
-        Me.viewBtn.Size = New System.Drawing.Size(157, 46)
-        Me.viewBtn.TabIndex = 5
-        Me.viewBtn.Text = "View"
-        Me.viewBtn.UseVisualStyleBackColor = False
+        Me.ViewBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.ViewBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.ViewBtn.FlatAppearance.BorderSize = 10
+        Me.ViewBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ViewBtn.ForeColor = System.Drawing.Color.White
+        Me.ViewBtn.Location = New System.Drawing.Point(290, 232)
+        Me.ViewBtn.Name = "ViewBtn"
+        Me.ViewBtn.Size = New System.Drawing.Size(157, 46)
+        Me.ViewBtn.TabIndex = 5
+        Me.ViewBtn.Text = "View"
+        Me.ViewBtn.UseVisualStyleBackColor = False
         '
-        'Button1
+        'LogoutBtn
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.Button1.FlatAppearance.BorderSize = 10
-        Me.Button1.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(692, 383)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 46)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.LogoutBtn.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.LogoutBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.LogoutBtn.FlatAppearance.BorderSize = 10
+        Me.LogoutBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LogoutBtn.Location = New System.Drawing.Point(692, 383)
+        Me.LogoutBtn.Name = "LogoutBtn"
+        Me.LogoutBtn.Size = New System.Drawing.Size(96, 46)
+        Me.LogoutBtn.TabIndex = 5
+        Me.LogoutBtn.Text = "Logout"
+        Me.LogoutBtn.UseVisualStyleBackColor = False
         '
-        'Button2
+        'ShowEventBtn
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.Button2.FlatAppearance.BorderSize = 10
-        Me.Button2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(290, 293)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(157, 46)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Show Events"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ShowEventBtn.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.ShowEventBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.ShowEventBtn.FlatAppearance.BorderSize = 10
+        Me.ShowEventBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ShowEventBtn.ForeColor = System.Drawing.Color.White
+        Me.ShowEventBtn.Location = New System.Drawing.Point(290, 293)
+        Me.ShowEventBtn.Name = "ShowEventBtn"
+        Me.ShowEventBtn.Size = New System.Drawing.Size(157, 46)
+        Me.ShowEventBtn.TabIndex = 5
+        Me.ShowEventBtn.Text = "Show Events"
+        Me.ShowEventBtn.UseVisualStyleBackColor = False
         '
-        'Button3
+        'ShowClubBtn
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Blue
-        Me.Button3.FlatAppearance.BorderSize = 10
-        Me.Button3.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(105, 293)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(157, 46)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Show Clubs"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.ShowClubBtn.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.ShowClubBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
+        Me.ShowClubBtn.FlatAppearance.BorderSize = 10
+        Me.ShowClubBtn.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ShowClubBtn.ForeColor = System.Drawing.Color.White
+        Me.ShowClubBtn.Location = New System.Drawing.Point(105, 293)
+        Me.ShowClubBtn.Name = "ShowClubBtn"
+        Me.ShowClubBtn.Size = New System.Drawing.Size(157, 46)
+        Me.ShowClubBtn.TabIndex = 5
+        Me.ShowClubBtn.Text = "Show Clubs"
+        Me.ShowClubBtn.UseVisualStyleBackColor = False
         '
-        'Button4
+        'LoadDataBtn
         '
-        Me.Button4.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button4.Font = New System.Drawing.Font("Constantia", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(105, 356)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(157, 41)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Load Data"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(-37, -17)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(874, 485)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
+        Me.LoadDataBtn.BackColor = System.Drawing.Color.ForestGreen
+        Me.LoadDataBtn.Font = New System.Drawing.Font("Constantia", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LoadDataBtn.ForeColor = System.Drawing.Color.White
+        Me.LoadDataBtn.Location = New System.Drawing.Point(105, 356)
+        Me.LoadDataBtn.Name = "LoadDataBtn"
+        Me.LoadDataBtn.Size = New System.Drawing.Size(157, 41)
+        Me.LoadDataBtn.TabIndex = 6
+        Me.LoadDataBtn.Text = "Load Data"
+        Me.LoadDataBtn.UseVisualStyleBackColor = False
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.removeBtn)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.viewBtn)
-        Me.Controls.Add(Me.updateBtn)
-        Me.Controls.Add(Me.addBtn)
+        Me.Controls.Add(Me.LoadDataBtn)
+        Me.Controls.Add(Me.RemoveBtn)
+        Me.Controls.Add(Me.LogoutBtn)
+        Me.Controls.Add(Me.ShowClubBtn)
+        Me.Controls.Add(Me.ShowEventBtn)
+        Me.Controls.Add(Me.ViewBtn)
+        Me.Controls.Add(Me.UpdateBtn)
+        Me.Controls.Add(Me.AddBtn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -233,13 +222,12 @@ Partial Class Main
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents addBtn As Button
-    Friend WithEvents removeBtn As Button
-    Friend WithEvents updateBtn As Button
-    Friend WithEvents viewBtn As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents AddBtn As Button
+    Friend WithEvents RemoveBtn As Button
+    Friend WithEvents UpdateBtn As Button
+    Friend WithEvents ViewBtn As Button
+    Friend WithEvents LogoutBtn As Button
+    Friend WithEvents ShowEventBtn As Button
+    Friend WithEvents ShowClubBtn As Button
+    Friend WithEvents LoadDataBtn As Button
 End Class
